@@ -1,0 +1,25 @@
+body {
+	background-color: #a1f8ed;
+}
+
+.update-button {
+	color: #000000;
+	background: #66c5d6;
+	padding: 10px 50px;
+	border: solid;
+	border-color: #000000;
+}
+
+.button-area {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mahjong-pi-image {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
