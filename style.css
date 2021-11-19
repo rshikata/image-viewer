@@ -5,21 +5,30 @@ body {
 .update-button {
 	color: #000000;
 	background: #66c5d6;
-	padding: 10px 50px;
+	font-size: 200%;
+	padding: 10px 30px;
 	border: solid;
 	border-color: #000000;
 }
 
 .button-area {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	padding: 20px;
+	margin: 0 auto;
 }
 
-.mahjong-pi-image {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.pai-area {
+	padding: 30px;
+	margin: 0 auto;
+}
+
+.display-area {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.pai-area img {
+	width: 80px;
+	height: auto;
 }
