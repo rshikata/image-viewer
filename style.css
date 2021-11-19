@@ -25,10 +25,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-top: 200px;
+	margin-top: 20%;
+	margin-bottom: 20%;
 }
 
-.pai-area img {
-	width: 80px;
+.pai-image {
+	width: 70px;
 	height: auto;
 }
