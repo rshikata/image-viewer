@@ -4,30 +4,31 @@
 		<title>麻雀牌表示アプリ</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<main class="display-area">
-		<div class="pai-area">
-			<!-- 画像表示 -->
+	<body>
+		<main class="display-area">
+			<div class="pai-area">
+				<!-- 画像表示 -->
 
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-			<img class="pai-image" src="pai-images/ji1-66-90-l.png" />
-		</div>
+				<img class="pai-image" id="pai_0" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_1" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_2" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_3" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_4" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_5" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_6" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_7" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_8" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_9" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_10" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_11" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_12" src="pai-images/ji1-66-90-l.png" />
+				<img class="pai-image" id="pai_13" src="pai-images/ji1-66-90-l.png" />
+			</div>
 
-		<div class="button-area">
-			<button class="update-button" onclick="alert('牌姿を更新します！')">
-				画像更新
-			</button>
-		</div>
-	</main>
+			<div class="button-area">
+				<button class="update-button" id="update">画像更新</button>
+			</div>
+		</main>
+		<script src="image-change.js"></script>
+	</body>
 </html>
