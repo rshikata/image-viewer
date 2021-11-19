@@ -1,0 +1,35 @@
+body {
+	background-color: #a1f8ed;
+}
+
+.update-button {
+	color: #000000;
+	background: #66c5d6;
+	font-size: 200%;
+	padding: 10px 30px;
+	border: solid;
+	border-color: #000000;
+}
+
+.button-area {
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.pai-area {
+	padding: 30px;
+	margin: 0 auto;
+}
+
+.display-area {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+
+.pai-image {
+	width: 70px;
+	height: auto;
+}
