@@ -1,7 +1,7 @@
 export default class PaiListValidator {
 	// 牌の重複が3枚以下かチェック
 	validateNumberOfSamePai(paiList, targetPai) {
-		let paiCounter;
+		let paiCounter = 0;
 
 		paiList.forEach((pai) => {
 			if (pai === targetPai) {
@@ -9,9 +9,6 @@ export default class PaiListValidator {
 			}
 		});
 
-		if (paiCounter > 2) {
-			return false;
-		}
-		return true;
+		return paiCounter <= 2;
 	}
 }
