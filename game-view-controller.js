@@ -1,23 +1,23 @@
 import ImageController from "./image-controller";
-import HtmlElementCreator from "./html-element-creator";
+import HtmlElementController from "./html-element-creator";
 
 window.onload = () => {
 	const updateButton = document.getElementById("update-button");
 
-	const controller = new ImageController("../pai-images");
-	const creator = new HtmlElementCreator();
+	const imageController = new ImageController("../pai-images");
+	const elementController = new HtmlElementController();
 
-	// 初期画面の画像表示
-	const initialImagePathList = controller.createTehaiImage();
-	creator.imgElementCreator(initialImagePathList, "pai-images");
+	const imageView = () => {
+		const imagePathList = imageController.createTehaiImage();
+		elementController.addImageElement(imagePathList, "pai-images");
+	};
 
 	// 更新ボタンのイベントリスナー登録
-	updateButton.addEventListener(
-		"click",
-		() => {
-			const imagePathList = controller.createTehaiImage();
-			creator.imgElementCreator(imagePathList, "pai-images");
-		},
-		false
-	);
+	updateButton.addEventListener("click", imageView, false);
+
+	try {
+		imageView();
+	} catch (error) {
+		console.error();
+	}
 };

@@ -6,7 +6,7 @@ export default class PaiOperator {
 	createTehaiList() {
 		const paiList = Object.values(PaiData);
 		const tehaiList = [];
-		const validator = new PaiListValidator();
+		const validator = this._createPaiListValidator();
 
 		while (tehaiList.length < 14) {
 			const paiNumber = Math.floor(Math.random() * paiList.length);
@@ -19,5 +19,9 @@ export default class PaiOperator {
 
 		tehaiList.sort();
 		return tehaiList;
+	}
+	// インスタンスの作成
+	_createPaiListValidator() {
+		return new PaiListValidator();
 	}
 }

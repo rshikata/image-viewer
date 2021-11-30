@@ -2,13 +2,13 @@ import PaiOperator from "./pai-operator";
 
 export default class ImageController {
 	constructor(rootPath) {
-		this.rootPath = rootPath;
+		this._rootPath = rootPath;
 	}
 
 	// 手牌の画像ファイルパスを返す
 	createTehaiImage() {
-		const operator = new PaiOperator();
-		const tehaiList = operator.createTehaiList();
+		const paiOperator = this._createPaiOperator();
+		const tehaiList = paiOperator.createTehaiList();
 
 		return this._convertToImageFilePath(tehaiList);
 	}
@@ -21,8 +21,13 @@ export default class ImageController {
 			const paiValue = value.split("-");
 			const kind = paiKind[parseInt(paiValue[0])];
 			const number = parseInt(paiValue[1]);
-			imagePathList.push(`${this.rootPath}/${kind}${number}-66-90-l.png`);
+			imagePathList.push(`${this._rootPath}/${kind}${number}-66-90-l.png`);
 		});
 		return imagePathList;
+	}
+
+	// インスタンスの作成
+	_createPaiOperator() {
+		return new PaiOperator();
 	}
 }
